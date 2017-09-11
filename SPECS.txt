@@ -1,0 +1,77 @@
+CLASSES
+=================
+
+Main (of course)
+TicTacToe
+---> properties: 
+	list<char> board of spots(0-8) OR 2D Array? 
+	aiMarker
+	playerMarker
+	bool isPlayerTurn
+	bool isComputerTurn
+
+---> functions: 
+	playTurn() ,, double-check if chosen spot is within range 
+		   ,, double-check if already chosen
+			(maybe not necessary if chosing off of DOM)
+	bool isThereAWinner()
+		   
+	
+
+AI
+---> functions: 
+	calculateBestMove()
+
+Stats
+---> properties: 
+	List<int> scores (just zeros/ones for W/L?)
+
+---> functions: 
+	calculateAverage(user)
+	 - you have won x out of y games
+	 - success rate (%)
+	static calculateAverage() 
+	 - success rate of all players combined
+
+
+User
+---> properties: 
+	Name
+	Stats
+	
+
+PAGES
+=================
+Home(Play Game takes to Game Play)
+GamePlay
+Stats (organize players by success rates)
+
+DATABASE
+=================
+player name, score
+
+
+SPECS
+=================
+1. Create pages
+
+2. Create board
+	a. class
+	b. tests
+	c. UI
+	
+
+3. Create player 
+	a. class
+	b. tests
+	c. UI
+
+4. Create game
+	a. class
+	b. tests
+	c. UI
+
+3. Create stats
+	a. class
+	b. tests
+	c. UI
