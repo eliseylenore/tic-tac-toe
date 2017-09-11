@@ -75,3 +75,6 @@ SPECS
 	a. class
 	b. tests
 	c. UI
+
+4. Create database 
+	a. remember to add setup to README.md.
