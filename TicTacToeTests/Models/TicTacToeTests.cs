@@ -15,7 +15,19 @@ namespace TicTacToe.Models.Tests
         {
             var game = new TicTacToe();
 
-            Assert.IsType<TicTacToe>(game);
+            char[,] expected = new char[,]
+            {
+                {'-', '-', '-' },
+                {'-', '-', '-' },
+                {'-', '-', '-' }
+            };
+            Assert.Equal(game.Board, expected);
+        }
+
+        public void EmptyBoardExists()
+        {
+            var game = new TicTacToe();
+
         }
 
         //[Fact()]

@@ -7,17 +7,17 @@ namespace TicTacToe.Models
 {
     public class TicTacToe
     {
-        char[,] board = new char[,]
+        public char[,] Board = new char[,]
         {
             {'-', '-', '-' },
             {'-', '-', '-' },
             {'-', '-', '-' }
         };
 
-        char aiMarker;
-        char playerMarker;
-        bool isPlayerTurn;
-        bool isComputerTurn;
+        char AiMarker;
+        char PlayerMarker;
+        bool IsPlayerTurn;
+        bool IsComputerTurn;
 
         public TicTacToe()
         {
