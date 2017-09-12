@@ -54,11 +54,14 @@ player name, score
 SPECS
 =================
 1. Create pages
+	a. tests
+	b. implementation
 
 2. Create board
 	a. class
 	b. tests
-	c. UI
+	c. implementation
+	d. UI
 	
 
 3. Create player 

@@ -22,6 +22,7 @@ namespace TicTacToe.Controllers.Tests
 
             // Assert
             Assert.NotNull(result);
+            Assert.IsType<ViewResult>(result);
         }
     }
 }
