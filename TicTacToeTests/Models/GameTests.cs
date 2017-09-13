@@ -13,11 +13,13 @@ namespace TicTacToe.Models.Tests
         [Fact]
         public void BoardTest()
         {
-            Game newGame = new Game();
+            Player newPlayer = new Player("Elise", 'x');
+            Game newGame = new Game(newPlayer);
 
             var expected = '-';
             var result = newGame.Board[1, 1];
             Assert.Equal(expected, result);
+            Assert.Equal(newPlayer, newGame.Player);
         }
 
         //[Fact()]

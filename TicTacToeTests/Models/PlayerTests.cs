@@ -13,11 +13,12 @@ namespace TicTacToe.Models.Tests
         [Fact]
         public void PlayerTest()
         {
-            Player newPlayer = new Player("Elise");
+            Player newPlayer = new Player("Elise", 'x');
             string expected = "Elise";
             string actual = newPlayer.Name;
 
             Assert.Equal(expected, actual);
+            Assert.Equal('x', newPlayer.Marker);
         }
     }
 }

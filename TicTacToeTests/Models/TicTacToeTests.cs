@@ -13,7 +13,8 @@ namespace TicTacToe.Models.Tests
         [Fact()]
         public void TicTacToeTest()
         {
-            var game = new Game();
+            Player newPlayer = new Player("Elise", 'x');
+            Game newGame = new Game(newPlayer);
 
             char[,] expected = new char[,]
             {
@@ -21,12 +22,13 @@ namespace TicTacToe.Models.Tests
                 {'-', '-', '-' },
                 {'-', '-', '-' }
             };
-            Assert.Equal(game.Board, expected);
+            Assert.Equal(newGame.Board, expected);
         }
 
         public void EmptyBoardExists()
         {
-            var game = new Game();
+            Player newPlayer = new Player("Elise", 'x');
+            Game newGame = new Game(newPlayer);
 
         }
 

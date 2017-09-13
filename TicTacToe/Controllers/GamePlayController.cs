@@ -12,7 +12,8 @@ namespace TicTacToe.Controllers
         // GET: GamePlay
         public ActionResult Index()
         {
-            Game newGame = new Game();
+            Player newPlayer = new Player("Elise", 'x');
+            Game newGame = new Game(newPlayer);
             return View(newGame);
         }
     }
