@@ -18,6 +18,7 @@ namespace TicTacToe.Models
 
         public Game(Player newPlayer)
         {
+            this.Player = newPlayer;
             this.Board  = new char[,]
             {
                 {'-', '-', '-' },
