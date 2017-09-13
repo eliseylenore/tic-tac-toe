@@ -10,9 +10,9 @@ namespace TicTacToe.Models
         public String Name { get; set; }
         public int PercentWon { get; set; }
 
-        public Player(String Name)
+        public Player(String name)
         {
-
+            this.Name = name;
         }
 
     }
