@@ -1,9 +1,29 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+@model TicTacToe.Models.Player
 
 <div class="jumbotron">
     <h1>Ready for some Tic Tac Toe?</h1>
-    @Html.ActionLink("Play Game", "Index", "GamePlay")
-</div>
+    @Html.ValidationSummary(false, "", new { @class = "text-danger" })
+    @using (Html.BeginForm())
+    {
+        <div class="form-group">
+            @Html.LabelFor(model => model.Name)
+            @Html.TextBoxFor(model => model.Name, new { @class = "form-control", required = "required", title = "Name is required" })
+            @Html.ValidationMessageFor(model => model.Marker, "", new { @class = "text-danger" })
+
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Marker)
+            @Html.TextBoxFor(model => model.Marker, new { @class = "form-control", required = "required",  title = "Marker is required" })
+            @Html.ValidationMessageFor(model => model.Marker, "", new { @class = "text-danger" })
+        </div>
+
+        <input type="submit" value="Play Game" class="btn btn-success" />
+    }
+
+    @*@Html.ActionLink("Play Game", "Index", "GamePlay")*@
+    </div>
 

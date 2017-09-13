@@ -10,10 +10,9 @@ namespace TicTacToe.Controllers
     public class GamePlayController : Controller
     {
         // GET: GamePlay
-        public ActionResult Index()
+        public ActionResult Index(Player player)
         {
-            Player newPlayer = new Player("Elise", 'x');
-            Game newGame = new Game(newPlayer);
+            Game newGame = new Game(player);
             return View(newGame);
         }
     }
