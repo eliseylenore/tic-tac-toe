@@ -122,6 +122,7 @@
     <Compile Include="Controllers\HomeControllerTests.cs" />
     <Compile Include="Controllers\StatsControllerTests.cs" />
     <Compile Include="Models\GameTests.cs" />
+    <Compile Include="Models\PlayerTests.cs" />
     <Compile Include="Models\TicTacToeTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

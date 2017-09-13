@@ -7,12 +7,12 @@ namespace TicTacToe.Models
 {
     public class Game
     {
-        public char[,] Board;
+        public char[,] Board { get; set; }
 
-        char AiMarker;
-        char PlayerMarker;
-        bool IsPlayerTurn;
-        bool IsComputerTurn;
+        public char AiMarker { get; set; }
+        char PlayerMarker { get; set; }
+        bool IsPlayerTurn { get; set; }
+        bool IsComputerTurn { get; set; }
 
         public Game()
         {
