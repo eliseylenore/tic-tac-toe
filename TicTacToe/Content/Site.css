@@ -26,12 +26,6 @@ textarea {
 
 /******************* Board *******************/
 
-td:after {
-  content: '';
-  display: block;
-  margin-top: 100%;
-}
-
 /*A note about border-collapse: collapse. Normally table borders have a sort of gutter in them, so we need this property to get rid of that. Apart from that, we're just setting the relevant border colors to transparent using thenth-child pseudo class</a>. This pseudo class only targets the nth child, so we can target the 2nd td in each column by adding 2 to the nth child pseudo class. We also use the first-of-type pseudo class which targets the first element in a group of elements.*/
 table {
   width: 100%;
@@ -39,7 +33,6 @@ table {
 }
 td {
   width: 33.333%;
-  height: calc(width);
   border: 6px solid #222;
 }
 td:first-of-type {
@@ -59,4 +52,5 @@ tr:nth-of-type(3) td {
 .marker {
     text-align: center;
     font-size: 72px;
+    margin-bottom: 20px;
 }
