@@ -8,26 +8,16 @@ using System.Threading.Tasks;
 
 namespace TicTacToe.Models.Tests
 {
-    public class TicTacToeTests
+    public class GameTests
     {
-        [Fact()]
-        public void TicTacToeTest()
+        [Fact]
+        public void BoardTest()
         {
-            var game = new Game();
+            Game newGame = new Game();
 
-            char[,] expected = new char[,]
-            {
-                {'-', '-', '-' },
-                {'-', '-', '-' },
-                {'-', '-', '-' }
-            };
-            Assert.Equal(game.Board, expected);
-        }
-
-        public void EmptyBoardExists()
-        {
-            var game = new Game();
-
+            var expected = '-';
+            var result = newGame.Board[1, 1];
+            Assert.Equal(expected, result);
         }
 
         //[Fact()]

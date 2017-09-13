@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TicTacToe.Models;
 
 namespace TicTacToe.Controllers
 {
@@ -11,7 +12,8 @@ namespace TicTacToe.Controllers
         // GET: GamePlay
         public ActionResult Index()
         {
-            return View();
+            Game newGame = new Game();
+            return View(newGame);
         }
     }
 }

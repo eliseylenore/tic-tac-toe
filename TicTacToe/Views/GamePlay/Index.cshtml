@@ -4,26 +4,24 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
+@model TicTacToe.Models.Game
+
 <h2>GamePlay</h2>
 
 <div class="col-md-3"></div>
 <div class="col-md-6">
     <table id="board">
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+       
+        @for (int i = 0; i < 3; i++)
+        {
+            <tr>
+
+                @for (int j = 0; j < 3; j++)
+                {
+                    <td><h1 class="marker">@Model.Board[i,j]</h1></td>
+                }
+            </tr>
+        }
     </table>
 </div>
 <div class="col-md-3"></div>

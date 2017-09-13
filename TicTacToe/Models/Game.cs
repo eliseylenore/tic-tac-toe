@@ -5,23 +5,23 @@ using System.Web;
 
 namespace TicTacToe.Models
 {
-    public class TicTacToe
+    public class Game
     {
-        public char[,] Board = new char[,]
-        {
-            {'-', '-', '-' },
-            {'-', '-', '-' },
-            {'-', '-', '-' }
-        };
+        public char[,] Board;
 
         char AiMarker;
         char PlayerMarker;
         bool IsPlayerTurn;
         bool IsComputerTurn;
 
-        public TicTacToe()
+        public Game()
         {
-          
+            this.Board  = new char[,]
+            {
+                {'-', '-', '-' },
+                {'-', '-', '-' },
+                {'-', '-', '-' }
+            };
         }
 
         public void playTurn()
